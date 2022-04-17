@@ -1,0 +1,75 @@
+@media screen and (max-width: 1300px)
+  .book
+    &__box
+      min-width: 620px
+
+  .box
+    padding: 15px
+
+  .button--booksInfo:first-of-type
+    margin-bottom: 0
+    margin-right: 10px
+
+  .booksInfo
+    &__button-group
+      flex-direction: row
+      justify-content: flex-end
+      margin-bottom: 15px
+    &__description
+      margin-right: 0
+    &__row
+      flex-direction: column-reverse
+      align-items: flex-start
+
+@media screen and (max-width: 991px)
+  .modal
+    &__dialog
+      max-width: 320px
+      padding: 40px 20px
+
+  .container
+    min-height: 100vh
+
+  .booksInfo
+    &__button-group
+      justify-content: center
+    &__text--default
+      text-align: center
+    &__row
+      align-items: center
+    &__box
+      height: auto
+      border: none
+      overflow: visible
+    &__description
+      text-align: center
+
+  .book
+    &__row
+      margin-bottom: 0
+    &__window
+      overflow: auto
+      width: 100%
+    &__field
+      display: flex
+    &__box
+      width: 100%
+      padding: 15px 0
+      height: auto
+      min-width: 0
+
+  .row
+    &--main
+      flex-direction: column
+
+  body
+    font-size: 14px
+
+  .title
+    font-size: 26px
+    margin-bottom: 20px
+
+  .button
+    &--booksInfo
+      max-width: 120px
+      padding: 8px 0

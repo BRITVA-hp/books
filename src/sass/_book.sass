@@ -1,0 +1,73 @@
+.book
+  position: relative
+  width: 60px
+  height: 200px
+  cursor: pointer
+  transform-origin: center center -75px
+  transform-style: preserve-3d
+  transition: 0.5s
+  &:hover
+    transform: translateZ(20px)
+  &__box
+    min-width: 670px
+  &__wrap
+    margin: 0 20px
+    transition: 0.5s
+    &--active
+      .book
+        width: 150px
+        transform: rotateY(-90deg)
+  &__row
+    justify-content: flex-start
+    align-items: flex-end
+    border-bottom: 4px solid #939292
+    transition: 0.5s
+    margin-bottom: 20px
+    &:last-of-type
+      margin-bottom: 0
+  &__text
+    font-weight: 500
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotateZ(-90deg)
+    white-space: nowrap
+    text-align: center
+    color: #d5d2d2
+    &--right
+      position: static
+      transform: none
+      max-width: 130px
+      white-space: normal
+      text-align: center
+      p
+        &:first-of-type
+          margin-bottom: 10px
+        &:last-of-type
+          text-transform: capitalize
+  &__facet
+    transform-origin: left top
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    &--face
+      width: 60px
+      transform: translateZ(-150px)
+      background: #939292
+    &--back
+      width: 60px
+      background: linear-gradient(to bottom, rgba(0,0,0, .3), rgba(0,0,0, .4)), url('https://oir.mobi/uploads/posts/2021-03/1616987734_48-p-fon-dlya-oblozhki-knigi-61.jpg') no-repeat center
+      background-size: cover
+    &--left
+      background: url('https://oir.mobi/uploads/posts/2021-03/1616987715_2-p-fon-dlya-oblozhki-knigi-2.jpg') no-repeat center
+      width: 150px
+      transform: rotateY(90deg)
+    &--right
+      background: url('https://oir.mobi/uploads/posts/2021-03/1616987715_2-p-fon-dlya-oblozhki-knigi-2.jpg') no-repeat center
+      background-size: cover
+      width: 150px
+      transform: rotateY(90deg) translateZ(60px)
+      display: flex
+      align-items: center
+      justify-content: center

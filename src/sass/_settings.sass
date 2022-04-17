@@ -1,0 +1,83 @@
+*
+  margin: 0
+  padding: 0
+  font-family: 'Roboto', sans-serif
+  box-sizing: border-box
+
+body
+  background-color: #2f3244
+  color: #fff
+  font-size: 16px
+
+.container
+  max-width: 1500px
+  margin: auto
+  position: relative
+  background: url("https://funart.pro/uploads/posts/2021-04/1618432837_35-funart_pro-p-oboi-fon-fon-knigi-37.jpg") no-repeat center
+  background-size: cover
+  &::after
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0, 0.6)
+    z-index: 1
+
+.row
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  &--main
+    position: relative
+    z-index: 2
+
+.box
+  padding: 30px
+  position: relative
+  height: 100vh
+  overflow: auto
+
+.title
+  text-align: center
+  margin: auto
+  margin-bottom: 30px
+  font-size: 36px
+  font-weight: 700
+
+ul
+  list-style-type: none
+
+li
+  margin-bottom: 5px
+  span
+    font-weight: 700
+    color: #c0bebe
+
+.button
+  transition: 0.3s
+  font-size: 14px
+  font-style: normal
+  font-weight: normal
+  line-height: 110%
+  padding: 8px 0
+  cursor: pointer
+  color: #ffffff
+  background-color: #0404c0
+  border-radius: 5px
+  border: none
+  text-decoration: none
+  text-align: center
+  display: inline-block
+  width: 100%
+  width: 130px
+  &:focus
+    outline: none
+  &:hover
+    transform: scale(1.03)
+  &--booksInfo
+    &:first-of-type
+      margin-bottom: 10px
+  &--deleted
+    background-color: orangered

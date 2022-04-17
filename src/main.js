@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import store from './store'
+import directives from './directives'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+directives(app)
+app.use(store)
+app.mount('#app')

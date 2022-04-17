@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="container">
+  <div class="row row--main">
+    <books></books>
+
+    <books-info></books-info>
+  </div>
+
+  <modal v-if="stateModal"></modal>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Books from './components/Books.vue'
+import BooksInfo from './components/BooksInfo.vue'
+import Modal from './components/Modal.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Books,
+    BooksInfo,
+    Modal
+  },
+  computed: {
+    stateModal () {
+      return this.$store.getters.stateModal
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass">
+
+@import './sass/styles'
+
 </style>

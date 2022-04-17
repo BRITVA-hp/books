@@ -1,0 +1,49 @@
+.modal
+  position: fixed
+  z-index: 199
+  left: 0
+  top: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000000, 0.6)
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  overflow: auto
+  transition: 0.3s
+  padding-top: 40px
+  padding-bottom: 40px
+  animation: fadeIn 0.5s
+  &__button
+    width: 100%
+    padding: 14px
+    font-size: 20px
+  &__dialog
+    width: 100%
+    max-width: 600px
+    padding: 50px
+    background-color: #fff
+    position: relative
+  &__close
+    position: absolute
+    top: 10px
+    right: 10px
+    cursor: pointer
+    color: black
+    font-size: 24px
+  &__input-group
+    position: relative
+  &__input
+    width: 100%
+    padding: 14px 18px
+    border: 1px solid #d6d6d6
+    margin-bottom: 10px
+    &:focus
+      outline: none
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
